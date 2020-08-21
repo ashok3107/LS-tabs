@@ -1,0 +1,27 @@
+.tab{
+    position: relative;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.tab.active{
+    border-bottom: 2px solid skyblue;
+}
+
+.tab.active:focus {
+    outline: none;
+}
+
+.close-tab{
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    top: 3px;
+}
+
+.tab:hover .close-tab{
+    display: inline-block;
+}

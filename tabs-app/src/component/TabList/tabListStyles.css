@@ -1,0 +1,40 @@
+.tab-list-container{
+    position: relative;
+    background: #FAFAFA;
+}
+.tab-lists{
+    display: flex;
+    margin-right: 50px;
+    max-width: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.tab-lists.with-chevron{
+    margin-right: 80px;
+    margin-left: 20px;
+    max-width: calc(100% - 100px);
+}
+
+.new-tab{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    cursor: pointer;
+    top: 3px;
+    width: 40px;
+    font-size: 24px;
+}
+
+.chevron{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.chevron.next-tab{
+    left: unset;
+    right: 60px;
+}

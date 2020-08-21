@@ -1,0 +1,52 @@
+.toast{
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 5px;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    padding: 10px 20px;
+    min-width: 100px;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right .7s;
+    background-color: greenyellow;
+    z-index: 2;
+}
+
+.toast .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toast .desc{
+    margin-top: 10px;
+}
+
+.toast .close-toast{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toast-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+@keyframes toast-in-right {
+	from {
+	  transform: translateX(100%);
+	  
+	}
+	to {
+	  transform: translateX(0);
+	}
+}
